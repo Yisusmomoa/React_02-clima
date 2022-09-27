@@ -18,7 +18,7 @@ export default function WeatherApp() {
 
   async function loadInfo(city='london') {
     const REACT_APP_KEY='182f6d09cc7f40a7b0750713220807';
-    const REACT_APP_URL='http://api.weatherapi.com/v1/current.json?aqi=no'
+    const REACT_APP_URL='https://api.weatherapi.com/v1/current.json?aqi=no'
     try {
       const request=await fetch(`${REACT_APP_URL}&key=${REACT_APP_KEY}&q=${city}`);
       const json=await request.json();
